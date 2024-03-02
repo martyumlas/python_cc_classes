@@ -1,18 +1,24 @@
-class Restaurant:
+class Restaurant():
+    '''restaurant class'''
 
-    def __init__(self, restaurant_name, restaurant_type):
-        self.restaurant_name = restaurant_name
+    def __init__(self, name, restaurant_type):
+        self.name = name
         self.restaurant_type = restaurant_type
 
-    def describe_restaurant(self):
-        return f'{self.restaurant_type} is {self.restaurant_type}'
+    def description(self):
+        print(f'{self.name} is {self.restaurant_type}')
 
-    def open_restaurant(self):
-        return f'{self.restaurant_name} is now open'
-
-
-jollibee = Restaurant('jollibee', 'fast-food')
-balay_dako = Restaurant('balay dako', 'fine dining')
+    def open(self):
+        print(f'{self.name} is now open')
 
 
-print(balay_dako.restaurant_name)
+jolibee = Restaurant('jolibee', 'fast-food')
+
+print(jolibee.name)
+print(jolibee.restaurant_type)
+jolibee.description()
+jolibee.open()
+
+
+
+
