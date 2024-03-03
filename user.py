@@ -4,8 +4,21 @@ class User:
         self.profile = {}
         self.profile['first_name'] = first_name
         self.profile['last_name'] = last_name
+        self.profile['login_attempts'] = 0
         self.profile.update(profile)
 
-new_user = User('mike','makiling')
+    def increment_login_attempt(self, attempt):
+        self.profile['login_attempts'] += attempt
 
-print(new_user.profile)
+    def reset_login_attempt(self):
+        self.profile['login_attempts'] = 0
+
+        
+new_user = User('mike','makiling')
+print(new_user.profile['login_attempts'])
+new_user.increment_login_attempt(4)
+print(new_user.profile['login_attempts'])
+new_user.reset_login_attempt()
+print(new_user.profile['login_attempts'])
+
+
