@@ -18,14 +18,14 @@ class Restaurant():
     def increment_number_served(self, num):
         self.number_serve += num
 
-jolibee = Restaurant('jolibee', 'fast-food')
-
-print(jolibee.number_serve)
-
-jolibee.set_number_served(6)
-
-print(jolibee.number_serve)
-
-jolibee.increment_number_served(10)
-
-print(jolibee.number_serve)
+# jolibee = Restaurant('jolibee', 'fast-food')
+#
+# print(jolibee.number_serve)
+#
+# jolibee.set_number_served(6)
+#
+# print(jolibee.number_serve)
+#
+# jolibee.increment_number_served(10)
+#
+# print(jolibee.number_serve)

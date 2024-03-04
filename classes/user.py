@@ -14,11 +14,11 @@ class User:
         self.profile['login_attempts'] = 0
 
         
-new_user = User('mike','makiling')
-print(new_user.profile['login_attempts'])
-new_user.increment_login_attempt(4)
-print(new_user.profile['login_attempts'])
-new_user.reset_login_attempt()
-print(new_user.profile['login_attempts'])
-
+# new_user = User('mike','makiling')
+# print(new_user.profile['login_attempts'])
+# new_user.increment_login_attempt(4)
+# print(new_user.profile['login_attempts'])
+# new_user.reset_login_attempt()
+# print(new_user.profile['login_attempts'])
+#
 

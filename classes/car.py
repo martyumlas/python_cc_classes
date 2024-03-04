@@ -15,7 +15,11 @@ class Car:
         print(f'this car has {self.odometer_reading} miles on it')
 
     def update_odometer(self, mileage):
-        self.odometer_reading = mileage
+
+        if mileage >= self.odometer_reading:
+            self.odometer_reading = mileage
+        else:
+            print("You cant't rollb back an odometer")
 
     def increment_odometer(self, miles):
         self.odometer_reading += miles
